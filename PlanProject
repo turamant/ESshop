@@ -1,4 +1,3 @@
-Часть 1
 - Создать виртуалное окружение
 
 - Инсталировать Джангу и создать 
@@ -22,7 +21,6 @@
 
 - Проверить работоспособность
 
-Часть 2
 - Create app -store-
 - pipenv install Pillow
 - Cretate models, makemigratios and migrate
@@ -33,7 +31,6 @@
 - Show detail view for a category ( Title and 
   list related products)
 
-  Part 3
 
   - Create a footer and move "Contact link down"
   - Create an about page
@@ -45,7 +42,6 @@
   - Create a view for the cart and show link in
     the menu
 
-  Part 4
   - Rename cart view to cart_detail
   - Add two settings for the cart in the settings file (cart_id, session_timeout)
   - Create a Cart class
@@ -53,4 +49,3 @@
   - Make it possible to remove products from the
     cart
 
-  Part 5
