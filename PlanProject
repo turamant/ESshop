@@ -1,26 +1,11 @@
-- Создать виртуалное окружение
-
-- Инсталировать Джангу и создать 
-  проект
-
-- Установка БД (migrate)
-
-- Создать суперюзера
-
-- Создать папку для приложений mkdir apps
-
-- Создать приложение core (mkdir apps/
-  core) , startapp core apps/core
-
-     - Создать основной template mkdir
-      apps/core/templates,  base.html(css bulma)
-   
-
-- Создать view для frontpage и 
-  простой темплейт
-
-- Проверить работоспособность
-
+- Create virtual env
+- Install Django and create project
+- Set BD and migrate
+- Create superuser
+- create startapp -core-
+- create templates and base.html (css bulma)
+- create view for frontpage and simple template
+- runserver
 - Create app -store-
 - pipenv install Pillow
 - Cretate models, makemigratios and migrate
@@ -30,8 +15,6 @@
 - Show categories in the menu (in store!)
 - Show detail view for a category ( Title and 
   list related products)
-
-
   - Create a footer and move "Contact link down"
   - Create an about page
   - Make it possible to set ordering for the 
@@ -41,11 +24,9 @@
   - Create app -cart-
   - Create a view for the cart and show link in
     the menu
-
   - Rename cart view to cart_detail
   - Add two settings for the cart in the settings file (cart_id, session_timeout)
   - Create a Cart class
   - Make it possible to add products to the cart
   - Make it possible to remove products from the
     cart
-
