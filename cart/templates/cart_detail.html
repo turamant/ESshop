@@ -42,6 +42,7 @@
    var productapp = new Vue({
         el: '#cartapp',
         delimiters: ['[[', ']]'],
+        store: store,
         data () {
             return {
                 products: [{{ productsstring|safe }}],
@@ -57,7 +58,9 @@
                     'quantity': parseInt(quantity) + 1
                 };
 
-                fetch('/api/add_to_cart/', {
+                store.commit('increment', 1);
+
+               /* fetch('/api/add_to_cart/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -81,7 +84,7 @@
                 .catch(function (error){
                     console.log('Error 2');
                     console.log(error);
-                })
+                })*/
         },
         removeFromCart(product_id) {
             console.log('Remove product_id:', product_id);

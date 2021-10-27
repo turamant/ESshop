@@ -54,7 +54,7 @@
 						{% endif %}
 					{% endfor %}
 
-					<div class="navbar-item">
+					<div class="navbar-item" id="navbarapp">
 						<a href="{% url 'cart_detail' %}" class="button is-primary">Cart ([[ numItems ]])</a>
 
 					</div>
@@ -96,9 +96,30 @@
 		</footer>
 
 		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
 		<script src="https://unpkg.com/vuex@3.5.1/dist/vuex.js"></script>
 		{% block scripts %}
 		{% endblock %}
+	<script>
+			var store = new Vuex.Store({
+				state: {
+					numItems: 0
+				},
+				mutations: {
+					increment(state, quantity){
+						state.numItems += quantity;
+					}
+				}
+			});
+			var navbarapp = new Vue({
+				el: '#navbarapp',
+				delimiters: ['[[', ']]'],
+				store: store,
+				computed: {
+					numItems: function(){
+						return store.state.numitems
+					}
+				}
+			});
+		</script>
 	</body>
 </html>
