@@ -12,5 +12,6 @@
 <h2>Install</h2>
 <p>pip install Django</p>
 <p>pip install Pillow</p>
+<p>pip install Celery</p>
 
 
